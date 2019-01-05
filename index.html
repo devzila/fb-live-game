@@ -40,7 +40,8 @@
     pubnub.subscribe({
         channel  : 'demo',
         callback : function(response) {
-            console.log(response);
+        	console.log(response);
+        	//addInteractiveObject(response);            
         }
     });
 
@@ -72,7 +73,6 @@
 
     };
   </script>
-  <button onclick="addInteractiveObject(123);">Add</button>
   <div class="justify-content-center" style="width:100%; height:99%; vertical-align: text-top;">
 
     <div class="video" style="width:330px; height:600px; margin-top=0%">
@@ -80,7 +80,6 @@
            <img src="images/nFUSZ-LOGO-Cube-OFFICIAL-Final.png" alt="nFüsz" id="logo" width="94" height="30" scale="0">
       </div>
       <div id="error_output"></div>
-      <div id="interactive_container"></div>
       <div id="play"><img src="images/play.png" alt="" ></div>
       <i id="preloader" class="fa fa-spinner fa-pulse fa-3x fa-fw" aria-hidden="true"
         style="color: #ffffff; position: absolute; top: 40%; left: 45.5%;"></i>

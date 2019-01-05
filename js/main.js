@@ -10,5 +10,5 @@ function startGame() {
 
 
 function addInteractiveObject(objectData){
-    $('#interactive_container').append('<button>Click Here</button>');
+  console.log(objectData);
 }
